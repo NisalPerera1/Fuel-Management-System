@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fuelmanagementsystem/screens/login_screen/components/center_widget/center_widget.dart';
 //import 'package:ionicons/ionicons.dart';
 //import 'package:login_screen/utils/helper_functions.dart';
 
@@ -117,7 +118,10 @@ class _LoginContentState extends State<LoginContent>
         children: [
           //Image.asset('fuelmanagemntsystem/lib/assets/images/facebook.png'),
           const SizedBox(width: 24),
-          SvgPicture.asset('assets/images/google.svg'),
+          SvgPicture.asset(
+            'assets/images/google.svg',
+          ),
+
           //SvgPicture.asset('assets/images/facebook'),
         ],
       ),
@@ -146,6 +150,8 @@ class _LoginContentState extends State<LoginContent>
     createAccountContent = [
       inputField('Name', Icons.person_outline),
       inputField('Email', Icons.mail_outline),
+      inputField('Vehicle Type', Icons.car_crash_outlined),
+      inputField('Fuel Type', Icons.car_crash_outlined),
       inputField('Password', Icons.lock_clock_outlined),
       loginButton('Sign Up'),
       orDivider(),
